@@ -48,4 +48,31 @@ Contact.saveContacts = function (contacts, done) {
 };
 
 
+Contact.saveContact = function (contact, done) {
+    var _this = this;
+    this.loadContacts(function (error, contacts) {
+        if (error)
+        {
+            return done(error);
+        }
+        contacts.push(contact);
+        _this.saveContacts(contacts, done);
+    });
+};
+
+
+Contact.findContacts = function (name, done) {
+    this.loadContacts(function (error, contacts) {
+        if (error)
+        {
+            return done(error);
+        }
+        var foundContacts = contacts.filter(function (contact) {
+            return contact.name == name;
+        });
+        done(error, foundContacts);
+    });
+
+
+};
 module.exports = Contact;

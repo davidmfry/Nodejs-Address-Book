@@ -17,7 +17,11 @@ var Contact = require("./contact");
 //   console.log(data);
 //});
 
-var contacts = [{name: "John Smith", number: "604-123-9090"}];
-Contact.saveContacts(contacts, function(error) {
-    console.log('success');
-});
+//var contacts = [{name: "John Smith", number: "604-123-9090"}];
+//Contact.saveContact(contacts, function(error) {
+//    console.log('success');
+//});
+
+//Contact.findContacts("John Smith", function (data) {
+//    console.log(data);
+//});

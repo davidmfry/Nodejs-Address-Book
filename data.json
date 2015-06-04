@@ -1,1 +1,4 @@
-[{"name":"John Smith","number":"604-123-9090"},{"name":"David Fry","number":"604-123-4675"},{"name":"Joel Fry","number":"787-512-4562"}]
+[{"name":"John Smith","number":"604-123-9090"},
+  {"name":"David Fry","number":"604-123-4675"},
+  {"name":"Joel Fry","number":"787-512-4562"},
+  {"name":"Ashley Fry","number":"360-882-1456"}]

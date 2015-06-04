@@ -1,6 +1,6 @@
 var fs = require("fs");
 var Contact = require("./contact");
-
+var Command = require("./command");
 //var name = Contact.parseName("John Smith,604-123-9090");
 //var number = Contact.parseNumber("John Smith,604-123-9090");
 //var contact = Contact.createContact("David Fry,604-123-9090");
@@ -25,3 +25,13 @@ var Contact = require("./contact");
 //Contact.findContacts("John Smith", function (data) {
 //    console.log(data);
 //});
+
+//Command.add(function (error) {
+//    console.log("Contact Added!");
+//});
+
+Command.find(function (error, results) {
+   console.log('Find complete!');
+});
+
+
